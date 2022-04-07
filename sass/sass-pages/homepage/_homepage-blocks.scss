@@ -1,0 +1,66 @@
+//Homepage Components
+//Mobile Components
+//Mobile - Call to action component
+.cta {
+  margin: 48px auto 0;
+  overflow: hidden;
+  text-align: center;
+  width: 87.2%;
+}
+.cta__subheading {
+  font-family: $text-font;
+  font-weight: 300;
+  letter-spacing: 2.7px;
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+.cta__heading {
+  color: $white;
+  font-family: $heading-font;
+  font-size: 80px;
+  line-height: 1.25;
+  margin: 16px auto;
+  text-transform: uppercase;
+}
+.cta__text {
+  font-family: $text-font-2;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.666666667;
+  margin-bottom: 20px;
+}
+.cta__btn {
+  background-color: $white;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0;
+  margin: 40px auto;
+  padding: 68px 27.5px 59px 29.5px;
+  transition: box-shadow 0.5s;
+}
+.cta__btn:hover {
+  box-shadow:  -1px -1px 1px 35px rgba(151, 151, 151, 0.3);
+  cursor: pointer;
+}
+.cta__link {
+  background-color: $white;
+  color: $purple-black;
+  font-family: $heading-font;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.cta__link:hover {
+  cursor: pointer;
+}
+
+//Background for the homepage
+.home-container {
+  background: url(../../assets/home/background-home-tablet.jpg) 0% 0%/cover no-repeat;
+  height: 100vh;
+  padding: 0.05px; //Used to prevent margin collapse.
+}
+// MOBILE LAYOUTS
+// Mobile Navigation Layout
+

@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600&family=Bellefair&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, * ::before, * ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  color: #d0d6f9;
+  font-family: "Bellefair", serif;
+  min-height: 100vh;
+  min-width: 23.4375rem;
+  max-width: 100%;
+}
+
+.background-img {
+  filter: brightness(50%);
+  position: absolute;
+  z-index: -1;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px auto;
+  width: 87.2%;
+}
+
+.nav__closeIcon {
+  position: absolute;
+  top: 33.95px;
+  right: 26.45px;
+}
+
+.nav__container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40px);
+  height: 100vh;
+  padding: 118px 0 0 32px;
+  position: absolute;
+  top: 0;
+  right: -200px;
+}
+
+.nav__container--off {
+  display: none;
+}
+
+.nav__container--on {
+  display: block;
+}
+
+.nav__items {
+  color: white;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  color: white;
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  margin-bottom: 32px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.nav__link--active {
+  border-right-style: solid;
+  border-right-color: white;
+}
+
+.nav__link:hover {
+  border-right-style: solid;
+  border-right-color: #979797;
+  cursor: pointer;
+}
+
+.nav__link span {
+  font-weight: bold;
+  margin-right: 14px;
+}
+
+.cta {
+  margin: 48px auto 0;
+  overflow: hidden;
+  text-align: center;
+  width: 87.2%;
+}
+
+.cta__subheading {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2.7px;
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+
+.cta__heading {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 80px;
+  line-height: 1.25;
+  margin: 16px auto;
+  text-transform: uppercase;
+}
+
+.cta__text {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.666666667;
+  margin-bottom: 20px;
+}
+
+.cta__btn {
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0;
+  margin: 40px auto;
+  padding: 68px 27.5px 59px 29.5px;
+  transition: box-shadow 0.5s;
+}
+
+.cta__btn:hover {
+  box-shadow: -1px -1px 1px 35px rgba(151, 151, 151, 0.3);
+  cursor: pointer;
+}
+
+.cta__link {
+  background-color: white;
+  color: #0b0d17;
+  font-family: "Bellefair", serif;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.cta__link:hover {
+  cursor: pointer;
+}
+
+.home-container {
+  background: url(../../assets/home/background-home-tablet.jpg) 0% 0%/cover no-repeat;
+  height: 100vh;
+  padding: 0.05px;
+}
+
+.destination-container {
+  background: url(../../../assets/destination/background-destination-mobile.jpg) 0% 0%/cover no-repeat;
+  min-height: 100vh;
+  padding: 0.05px;
+}
+
+.destinations__header {
+  text-align: center;
+}
+
+.destinations__heading {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: calc(8px + 2.1vw);
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  margin: 32px auto;
+  text-transform: uppercase;
+}
+
+.destinations__heading span {
+  color: #979797;
+  margin-right: 18px;
+}
+
+.destinations__img {
+  height: calc(85px + 23vw);
+  margin-bottom: 26px;
+  width: calc(85px + 23vw);
+}
+
+.destinations__nav {
+  margin: 0 auto 20px;
+  text-align: center;
+  width: 63.33333333%;
+}
+
+.destinations__nav-item {
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2.36px;
+  margin-right: 21px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.destinations__nav-item:hover {
+  border-bottom-style: solid;
+  border-bottom-color: #979797;
+}
+
+.destinations__nav-item:nth-child(4) {
+  margin-right: 0;
+}
+
+.destinations__nav-item--active {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  cursor: default;
+  pointer-events: none;
+}
+
+.destination {
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #383b4b;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  text-align: center;
+  width: 87.2%;
+}
+
+.destination__title {
+  color: white;
+  font-size: 56px;
+  text-transform: uppercase;
+}
+
+.destination__text {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6666666667;
+}
+
+.planet {
+  padding: 32px 0 0;
+  text-align: center;
+}
+
+.planet__info {
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.planet__title {
+  color: #d0d6f9;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  margin-bottom: 12px;
+}
+
+.planet__distance {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+}
+
+.crew-container {
+  height: 100vh;
+  padding: 0.05px;
+}
+
+.crew__header {
+  margin: 0 auto 32px;
+  text-align: center;
+  width: 327px;
+}
+
+.crew__heading {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: calc(8px + 2.1vw);
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+.crew__heading span {
+  color: #979797;
+  margin-right: 18px;
+}
+
+.crew__img-container {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #383b4b;
+  height: 223px;
+  margin: 32px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.crew__img {
+  height: 100%;
+}
+
+.crew__nav {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.crew__nav-item {
+  background-color: darkgrey;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin-right: 16px;
+  text-decoration: none;
+  width: 10px;
+}
+
+.crew__nav-item:hover {
+  background-color: #979797;
+  cursor: pointer;
+}
+
+.crew__nav-item:nth-child(4) {
+  margin-right: 0;
+}
+
+.crew__nav-item--active {
+  background-color: white;
+  cursor: default;
+  pointer-events: none;
+}
+
+.person {
+  margin: 0 auto;
+  text-align: center;
+  width: 87.2%;
+}
+
+.person__title {
+  color: #979797;
+  font-family: "Bellefair", serif;
+  font-size: 16px;
+  margin: 8px;
+  text-transform: uppercase;
+}
+
+.person__name {
+  color: white;
+  font-family: "Bellefair", serif;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.person__bio {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6666666667;
+}
+
+.technology-container {
+  background: url(../../../assets/technology/background-technology-mobile.jpg) 0% 0%/cover no-repeat;
+  min-height: 100vh;
+  padding: 0.05px;
+}
+
+.tech__header {
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.tech__header-title {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: calc(8px + 2.1vw);
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.tech__header-title span {
+  color: #979797;
+  margin-right: 18px;
+}
+
+.tech__img {
+  min-height: 170px;
+  width: 100%;
+}
+
+.tech__nav {
+  margin: 34px auto;
+  text-align: center;
+}
+
+.tech__nav-item {
+  border-style: solid;
+  border-color: #979797;
+  border-radius: 50%;
+  border-width: 1px;
+  color: white;
+  margin-right: 16px;
+  padding: 11px 16px;
+  text-decoration: none;
+}
+
+.tech__nav-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.tech__nav-item:hover {
+  background-color: white;
+  color: #0b0d17;
+  cursor: pointer;
+}
+
+.tech__nav-item--active {
+  background-color: white;
+  color: #0b0d17;
+  cursor: default;
+  pointer-events: none;
+}
+
+.tech__info {
+  margin: 0 auto;
+  text-align: center;
+  width: 87.2%;
+}
+
+.tech__title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  margin-bottom: 9px;
+}
+
+.tech__heading {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.tech__text {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  line-height: 1.666666667;
+}
+
+/*# sourceMappingURL=main.css.map */

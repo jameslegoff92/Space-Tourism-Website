@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600&family=Bellefair&display=swap');
+@import 'base';
+
+@import 'common-blocks';
+
+//Home Page Styling
+@import './sass-pages/homepage/homepage-blocks';
+
+//Destination Page Styling
+@import './sass-pages/destination/layout';
+@import './sass-pages/destination/components';
+
+//Crew Page Styling
+@import './sass-pages/crew/layout';
+@import './sass-pages/crew/components';
+
+//Technology Page Styling
+@import './sass-pages/technology/layout';
+@import './sass-pages/technology/components';

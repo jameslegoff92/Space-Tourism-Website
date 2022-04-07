@@ -1,0 +1,47 @@
+//VARIABLES
+//Colors
+$purple-black: rgba(11, 13, 23, 1);
+$light-purple: rgba(208, 214, 249, 1);
+$white: rgba(255, 255, 255, 1);
+
+// Typography
+$heading-font: 'Bellefair', serif; //Used for h1-h4 and subheading 1.
+$text-font: 'Barlow Condensed', sans-serif; //Used for h5, subheading 2, and text.
+$text-font-2: 'Barlow', sans-serif;
+
+//Miscellaneous
+
+//Mixins
+
+
+//CSS Resets
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, * ::before, * ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  color: $light-purple;
+  font-family: $heading-font;
+  min-height: 100vh;
+  min-width: 23.4375rem;
+  max-width: 100%;
+}
+
+//Reusable Classes
+//Creates a full viewport background img.
+.background-img {
+  filter: brightness(50%);
+  position: absolute;
+  z-index: -1;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
