@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs') %>
+
+  <body class="l-flex l-flex--body l-bg-img l-bg-img--homepage">
+
+    <%- include('../partials/header.ejs', {page: "home" }) %>
+
+      <main class="l-flex__item l-flex l-flex--homepage-main">
+        <div class="l-flex__item">
+          <div class="c-card c-card--homepage">
+            <h5 class="c-card__title">So, you want to travel to</h5>
+            <h1 class="c-card__heading">Space</h1>
+            <p class="c-card__text">
+              Let&#39;s face it; if you want to go to space, you might as well genuinely go to outer space and not hover
+              kind of
+              on the edge of it. Well sit back, and relax because we&#39;ll give you a truly out of this world
+              experience!
+            </p>
+          </div>
+        </div>
+
+        <button class="c-btn c-btn--cta">
+          <a class="c-btn__link" href="/destination/moon">Explore</a>
+        </button>
+      </main>
+
+      <script type="module" src="app.js"></script>
+  </body>
+
+</html>

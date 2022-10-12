@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "sass": "^1.49.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.12.0"
+  },
+  "name": "spacetourism",
+  "description": "![Alt text](/assets/home/background-home-desktop.jpg?raw=true)",
+  "version": "1.0.0",
+  "author": "James Louis Le-Goff",
+  "license": "ISC"
+}

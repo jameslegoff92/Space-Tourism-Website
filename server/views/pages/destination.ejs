@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs') %>
+
+  <body class="l-flex l-flex--body l-bg-img l-bg-img--dest">
+
+    <%- include('../partials/header.ejs', { page: "dest" }) %>
+
+      <main class="l-flex l-flex--dest-main">
+        <div class="l-flex__item" >
+          <h5 class="main-heading slide-in-right"><span>0<%= index %></span>Pick your destination</h5>
+        </div>
+
+        <div class="l-flex__item l-flex l-flex--dest-secondary">
+          <div class="l-flex__item">
+            <img src="<%=image %>" alt="Planet">
+          </div>
+
+          <div class="l-flex__item l-flex--dest-tertiary" >
+            <nav class="c-nav c-nav--text">
+              <a href="/destination/moon"
+                class="nav-text dest-subnav__nav-item <% if (name === 'Moon') { %> dest-subnav__nav-item--active <% } %>">Moon</a>
+              <a href="/destination/mars"
+                class="nav-text dest-subnav__nav-item <% if (name === 'Mars') { %> dest-subnav__nav-item--active <% } %>">Mars</a>
+              <a href="/destination/europa"
+                class="nav-text dest-subnav__nav-item <% if (name === 'Europa') { %> dest-subnav__nav-item--active <% } %>">Europa</a>
+              <a href="/destination/titan"
+                class="nav-text dest-subnav__nav-item <% if (name === 'Titan') { %> dest-subnav__nav-item--active <% } %>">Titan</a>
+            </nav>
+
+            <section class="dest__destination dest-card">
+              <h2 class="dest-card__title">
+                <%= name %>
+              </h2>
+              <p class="dest-card__text">
+                <%= description %>
+              </p>
+            </section>
+
+            <hr>
+
+            <div class="dest-card dest-card--flex dest-card--pad-top">
+              <div class="dest-card__wrapper dest-data">
+                <h6 class="subheading2 dest-data__title">Avg. Distance</h6>
+                <h6 class="subheading1 dest-data__distance">
+                  <%= distance %>
+                </h6>
+              </div>
+
+              <div class="dest-data">
+                <h6 class="subheading2 dest-data__title">Est. travel time</h6>
+                <h6 class="subheading1 dest-data__distance">
+                  <%= travel %>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <script type="module" src="/app.js"></script>
+  </body>
+
+</html>

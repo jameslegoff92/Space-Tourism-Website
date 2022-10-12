@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('../partials/head.ejs') %>
+
+<body class="body body--crew crew-bg">
+
+  <%- include('../partials/header.ejs', { page: "crew" }) %>
+
+  <main class="body__main main main--crew">
+    <h5 class="main__heading main-heading slide-in-right"><span>0<%= index %></span>Meet your crew</h5>
+
+    <div class="main__container main--crew__container flex flex--crew" >
+      <div class="flex--crew__item">
+        <img class="flex--crew__img" src="<%= image %>" alt="">
+      </div>
+
+      <div class="flex--crew__item flex flex--crew-secondary">
+        <nav class="container--crew__nav subnav-2">
+          <a href="/crew/douglas%20hurley"
+            class="subnav-2__item<% if (name === 'Douglas Hurley') { %> subnav-2__item--active <% } %>"></a>
+          <a href="/crew/mark%20shuttleworth"
+            class="subnav-2__item<% if (name === 'Mark Shuttleworth') { %> subnav-2__item--active <% } %>"></a>
+          <a href="/crew/victor%20glover"
+            class="subnav-2__item<% if (name === 'Viktor Glover') { %> subnav-2__item--active <% } %>"></a>
+          <a href="/crew/anousheh%20ansari"
+            class="subnav-2__item<% if (name === 'Anousheh Ansari') { %> subnav-2__item--active <% } %>"></a>
+        </nav>
+
+        <section class="c-card c-card--crew">
+          <h4 class="c-card__title">
+            <%= role %>
+          </h4>
+          <h3 class="c-card__heading">
+            <%= name %>
+          </h3>
+          <p class="c-card__text">
+            <%= bio %>
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+    <script type="module" src="/app.js"></script>
+</body>
+</html>

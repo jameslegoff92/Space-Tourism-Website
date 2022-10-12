@@ -1,0 +1,241 @@
+/*
+Table of Contents
+  1. Body
+  2. Logo
+  3. Button
+  4. Header
+  5. Nav
+  6. Nav List
+  7. Main-heading
+
+*/
+
+/*** Body ***/
+// .body {
+//   &__header {
+//     @include center(87.2%);
+
+//     @media only screen and (min-width: $screen-md) {
+//       min-height: 96px;
+//       width: 100%;
+//    }
+//   }
+
+//   &__main {
+//     margin-top: 34px;
+    
+
+//     @media only screen and (min-width: $screen-lg) {
+//       @include center(90.44%, 40px, auto, 0);
+//     }
+
+//     @media only screen and (min-width: $screen-xxl) {
+//       margin: clamp(40px, 5vw, 120px) auto 32px;
+//     }
+//   }
+
+//   &__main--homepage {
+//     margin: 20vw auto 0;
+//     width: min(87.2%, 450px);
+
+//     @media only screen and (min-width: $screen-md) {
+//       margin: 15vw auto 0;
+//    }
+
+//     @media only screen and (min-width: $screen-xl) {
+//       margin: 251px auto 0;
+//       width: 70%;
+//       max-width: 1110px;
+//     }
+
+//     @media only screen and (min-width: $screen-xxl) {
+//       margin: 251px auto 0;
+//       width: 80%;
+//       max-width: 1440px;
+//     }
+//   }
+// }
+
+// .main {
+
+//   &__heading {
+//     margin-bottom: min(60px, 7vw);
+//   }
+
+//   &__container {
+//     @include center(87.2%);
+//   }
+// }
+
+// .main--crew {
+
+//   &__container {
+
+//     @media only screen and (min-width: $screen-lg) {
+//       @include center(59.64%);
+//     }
+//   }
+// }
+
+/*** Logo ***/
+.logo {
+  height: clamp(40px, 2vw, 48px);
+  width: clamp(40px, 2vw, 48px);
+}
+
+
+
+
+/*** Header ***/
+// .header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   @media only screen and (min-width: $screen-md) {
+//     min-height: 96px;
+//  }
+// }
+
+// /*** Nav ***/
+// .nav {
+
+//   @media only screen and (min-width: $screen-md) {
+//     min-width: 58%;
+//  }
+// }
+
+// .nav::before {
+//   @media only screen and (min-width: $screen-xxl) {
+//     content: "";
+//     border: 0.5px solid rgba(255, 255, 255, 0.2);
+//     width: 35%;
+//     position: absolute;
+//     top: 88px;
+//     left: 10%;
+//     z-index: 1;
+//  }
+// }
+
+// /*** Nav-List ***/
+// .nav-list {
+//    background: rgba(255, 255, 255, 0.1);
+//    backdrop-filter: blur(40px);
+//    min-height: 100vh;
+//    padding: 118px 0 0 32px;
+//    position: absolute;
+//    top: 0;
+//    right: 0;
+//    min-width: 67%;
+//    z-index: 1;
+
+//    @media only screen and (min-width: $screen-md) {
+//       background-color: rgba(255, 255, 255, 0.07);
+//       @include flex();
+//       column-gap: clamp(37px, 10vw, 48px);
+//       padding: 0;
+//       padding-inline: clamp(48px, 12vw, 123px) clamp(48px, 8vw, 165px);
+//       position: static;
+//       height: 96px;
+//       min-height: auto;
+//    }
+  
+//   &__link {
+//     border: 1px solid transparent;
+//     color: var(--tertiary-color);
+//     display: inline-block;
+//     font-family: var(--secondary-ff);
+//     font-size: var(--fs-300);
+//     letter-spacing: var(--ls-400);
+//     margin-bottom: 32px;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     width: 100%;
+
+//     @media only screen and (min-width: $screen-md) {
+//       display: flex;
+//       align-items: center;
+//       font-size: var(--fs-100);
+//       min-height: 100%;
+//       letter-spacing: var(--ls-300);
+//       margin-bottom: 0;
+//    }
+
+//     @media only screen and (min-width: $screen-xl) {
+//       font-size: var(--fs-300);
+//       letter-spacing: var(--ls-400);
+//    }
+//   }
+
+//   &__link--active {
+//     border-right-style: solid;;
+//     border-right-color: var(--tertiary-color);
+
+//     @media only screen and (min-width: $screen-md) {
+//       border-bottom-style: solid;
+//       border-bottom-color: var(--tertiary-color);
+//       border-bottom-width: 1px;
+//       margin-bottom: -1px;
+//       border-right-style: solid;
+//       border-right-color: transparent;
+//    }
+//   }
+
+//   &__link:hover {
+//     border-right-width: 1px;
+//     border-right-style: solid;
+//     border-right-color: #979797;
+//     cursor: pointer;
+
+//     @media only screen and (min-width: $screen-md) {
+//       border-right-style: solid;
+//       border-right-color: transparent;
+//       border-bottom-style: solid;
+//       border-bottom-color: #979797;
+
+//     }
+//   }
+
+//   &__link span {
+//     font-weight: bold;
+//     margin-right: 14px;
+//   }
+// }
+
+/*** MAIN-HEADING ***/
+.main-heading {
+  color: var(--tertiary-color);
+  font-size: clamp(var(--fs-300), textRateOfChange(768, 1440, 16, 28), var(--fs-700));
+  font-weight: 400;
+  text-align: center;
+
+  @media only screen and (min-width: $screen-lg) {
+    padding-left: 5.0130208%;
+    text-align: left;
+
+    @-webkit-keyframes slide-in-right {
+      0% {
+        -webkit-transform: translateX(100%);
+                transform: translateX(1000%);
+      }
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+    }
+
+    @keyframes slide-in-right {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  }
+
+  & span {
+    color: #979797;
+    margin-right: 18px;
+  }
+}

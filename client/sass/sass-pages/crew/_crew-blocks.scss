@@ -1,0 +1,124 @@
+.crew-bg {
+  background: url(/assets/crew/background-crew-mobile.jpg) 0% 0%/100% 100% no-repeat, black;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  @media only screen and (min-width: $screen-md) {
+    background: url(/assets/crew/background-crew-tablet.jpg) 0% 0%/100% 100% no-repeat, black;
+  } 
+
+  @media only screen and (min-width: $screen-lg) {
+    background: url(/assets/crew/background-crew-desktop.jpg) 0% 0%/100% 100% no-repeat, black;
+  }
+}
+
+
+
+.flex {
+  display: flex;
+}
+
+.flex--crew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+
+  @media only screen and (min-width: $screen-lg) {
+    flex-direction: column-reverse;
+  }
+
+  &__item:nth-child(1) {
+    border-bottom: rgba(151,151,151,0.3) solid 1px;
+    text-align: center;
+  }
+
+  &__img {
+    vertical-align: bottom;
+    width: 55%;
+
+    @media only screen and (min-width: $screen-lg) {
+      width: 100%;
+    }
+  }
+}
+
+.flex--crew-secondary {
+  flex-direction: column;
+  row-gap: 32px;
+
+  @media only screen and (min-width: $screen-lg) {
+    flex-direction: column-reverse;
+  }
+}
+
+.container {
+
+}
+
+.container--crew {
+
+
+  @media only screen and (min-width: $screen-lg) {
+    
+  }  
+
+  &__nav {
+   
+  }
+}
+
+
+.subnav-2 {
+  display: flex;
+  justify-content:center;
+  column-gap: 16px;
+  min-height: 10px;
+
+  &__item {
+    background: #979797;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+  }
+
+  &__item:hover {
+    background: #ffffff;
+    opacity: 50.01%;
+  }
+
+  &__item--active {
+    background: #ffffff;
+  }
+}
+
+.c-card {
+
+  &__text {
+    font-size: clamp(var(--fs-200), textRateOfChange(768, 1440, 15, 18), var(--fs-400));
+  }
+}
+
+.card--crew {
+  text-align: center;
+
+  &__title {
+    font-size: clamp(var(--fs-300), textRateOfChange(768, 1440, 16, 32), var(--fs-800));
+    margin-bottom: 2.4464832%; 
+    opacity: 49.51%;
+    z-index: -2;
+  }
+
+  &__heading {
+    font-size: clamp(var(--fs-600), textRateOfChange(768, 1440, 24, 56), var(--hs-200));
+    margin-bottom: 16px;
+  }
+
+  &__text {
+
+    @media only screen and (min-width: $screen-lg) {
+      margin-bottom: 40px;
+    }
+  }
+}

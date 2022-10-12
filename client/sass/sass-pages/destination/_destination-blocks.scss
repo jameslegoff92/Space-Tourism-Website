@@ -1,0 +1,188 @@
+/*
+Table of Contents
+  1. Destination Background Image
+  2. Destination Page Header
+  3. Secondary Nav Block
+  4. Destination Info Block
+*/
+
+/*** DESTINATION BACKGROUND IMAGE ***/
+// .dest {
+//   background: url(/assets/destination/background-destination-mobile.jpg) 0% 0%/100% 100% no-repeat, black;
+//   min-height: 100vh;
+
+//   @media only screen and (min-width: $screen-lg) {
+//     background: url(/assets/destination/background-destination-tablet.jpg) 0% 0%/100% 100% no-repeat, black;
+//   } 
+
+//   @media only screen and (min-width: $screen-xxxl) {
+//     background: url(/assets/destination/background-destination-desktop.jpg) 0% 0%/100% 100% no-repeat, black;
+//   }
+
+//   &__card {
+//     margin-bottom: 6.93%;
+
+//     @media only screen and (min-width: $screen-lg) {
+//       margin-bottom: 8.06%;
+//     }
+
+//     @media only screen and (min-width: $screen-xxl) {
+//       margin-bottom: 0;
+//     }
+//   }
+
+//   &__subnav {
+//     margin: 0 auto min(5.33333%, 32px);
+//     width: 63%;
+//     max-width: 237.5px;
+
+//     @media only screen and (min-width: $screen-lg) {
+//       width: 37%;
+//     }
+
+//     @media only screen and (min-width: $screen-xxl) {
+//       column-gap: 37px;
+//       margin: 0 0 min(5.33333%, 32px);
+//     }
+//   }
+
+//   &__destination {
+//     margin: 0 auto min(8.53vw, 49px);
+//     width: 87.2%;
+
+//     @media only screen and (min-width: $screen-xxl) {
+//       width: 100%;
+//     }
+//   }
+// }
+
+// .dest-flex {
+
+//   @media only screen and (min-width:$screen-xxl) {
+//     display: flex;
+//     align-items: center;
+//     column-gap: 100px;
+//     justify-content: center;
+//     margin: 0 auto;
+//     width: 80%;
+//     max-width: 1200px;
+
+//     & > div {
+//       width: 50%;
+//     }
+//   }
+// }
+
+// .card {
+
+//   &__text {
+//     font-size: clamp(var(--fs-200), textRateOfChange(768, 1440, 15, 18), var(--fs-400));
+//   }
+// }
+
+
+
+// .dest-card {
+//   text-align: center;
+
+//   &__img {
+//     width: 45.33%;
+//     max-width: 300px;
+
+//     @media only screen and (min-width: $screen-lg) {
+//       width: 43.192%;
+//       max-width: 445px;
+//     }
+
+//     @media only screen and (min-width: $screen-xxl) {
+//       width: 100%;
+//     }
+//   }
+
+//   &__title {
+//     font-size: clamp(var(--hs-200), textRateOfChange(768, 1440, 56, 100), var(--hs-600));
+
+//     @media only screen and (min-width: $screen-xxl) {
+//       text-align: left;
+//     }
+//   }
+
+//   &__text {
+//     font-size: clamp(var(--fs-200), textRateOfChange(768, 1440, 15, 18), var(--fs-400));
+//     margin: 0 auto;
+//     max-width: 573px;
+
+//     @media only screen and (min-width: $screen-lg) {
+//       line-height: var(--lh-600);
+//     }
+
+//     @media only screen and (min-width: $screen-xxl) {
+//       text-align: left;
+//       max-width: 100%;
+//     }
+//   }
+  
+//   &__wrapper {
+//     margin-bottom: 32px;
+//   }
+// }
+
+// .dest-card--flex {
+//   @media only screen and (min-width: $screen-xxl) {
+//     display: flex;
+//     column-gap: 79px;
+//   }
+// }
+
+// .dest-card--pad-top {
+//   padding: 32px 0 0;
+// }
+
+// /*** Secondary Nav Component ***/
+// .dest-subnav {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   text-align: center;
+  
+
+//   &__nav-item {
+//     border-bottom: 2px solid transparent;
+//     font-size: min(3.73vw, 16px);
+//     padding-bottom: 8px;
+
+//     @media only screen and (min-width: $screen-lg) {
+//       letter-spacing: 2.7px;
+//     }
+//   }
+
+//   &__nav-item:hover {
+//     border-bottom: 2px solid #979797;
+//   }
+
+//   &__nav-item:nth-child(4) {
+//     margin-right: 0;
+//   }
+  
+//   &__nav-item--active {
+//     border-bottom: 2px solid var(--tertiary-color);
+//     cursor: default;
+//     pointer-events: none;
+//   }
+// }
+
+// //Mobile - Planet info component styling
+// .dest-data {
+
+//   @media only screen and (min-width: $screen-xxl) {
+//     text-align: left;
+//   }
+
+//   &__title {
+//     margin-bottom: 12px;
+//   }
+
+//   &__distance {
+//     color: var(--tertiary-color);
+//   }
+// }

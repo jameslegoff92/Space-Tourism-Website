@@ -1,0 +1,43 @@
+<header class="l-flex__item l-flex l-flex--header c-header">
+  <img class="logo" src="/assets/shared/logo.svg" alt="logo" />
+
+  <nav class="l-nav">
+    <button class="c-btn c-btn--transparent js-open-nav js-hidden">
+      <img src="/assets/shared/icon-hamburger.svg" alt="" />
+    </button>
+
+    <button class="c-btn c-btn--transparent u-inc-z js-close-nav js-hidden">
+      <img src="/assets/shared/icon-close.svg" alt="" />
+    </button>
+
+    <ul class="l-nav__item c-nav-list js-hidden">
+      <li>
+        <a class="c-nav-list__link <% if (page === 'home') { %> nav-list__link--active <% } %>" href="/">
+          <span class="js-span">00</span>
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a class="c-nav-list__link <% if (page === 'dest') { %> nav-list__link--active <% } %>" href="/destination/moon">
+          <span class="js-span">01</span>
+          Destination
+        </a>
+      </li>
+
+      <li>
+        <a class="c-nav-list__link <% if (page === 'crew') { %> nav-list__link--active <% } %>" href="/crew/douglas%20hurley">
+          <span class="js-span">02</span>
+          Crew
+        </a>
+      </li>
+
+      <li>
+        <a class="c-nav-list__link <% if (page === 'tech') { %> nav-list__link--active <% } %>" href="/technology/launch%20vehicle">
+          <span class="js-span">03</span>
+          Technology
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,154 @@
+/*
+  FLEX BLOCK LAYOUT CLASS
+*/
+.l-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+  Flex Modifiers
+*/
+.l-flex--body {
+  gap: 24px 0;
+  padding: 1.5em 1.5em 0 1.5em;
+
+  @media only screen and (min-width: $screen-md) {
+    padding: 0 0 0 5.078%;
+  }
+
+  @media only screen and (min-width: $screen-xl) {
+    padding-top: clamp(0px, 3vw, 40px);
+  }
+}
+
+.l-flex--header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.l-flex--homepage-main {
+  gap: 21.6vw 0;
+  align-items: center;
+
+  @media only screen and (min-width: $screen-md) {
+    padding-right: 5.078%;
+  }
+
+  @media only screen and (min-width: $screen-xxxl) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  > .l-flex__item {
+    max-width: 347px;
+
+    @media only screen and (min-width: $screen-lg) {
+      max-width: 450px;
+    }
+  }
+}
+
+/*** Layout Classes for the Destination Page ***/
+.l-flex--dest-main {
+  gap: 32px 0;
+}
+
+.l-flex--dest-secondary {
+  align-items: center;
+  gap: 26px 0;
+
+  .l-flex__item:nth-child(1) {
+    height: 170px;
+    width: 170px;
+  }
+}
+
+.l-flex-dest-tertiary {
+
+}
+
+
+
+.l-flex--primary\@xxl {
+  @media only screen and (min-width: $screen-xxl) {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 0 108px;
+  }
+}
+
+.l-flex--secondary\@xxl {
+  @media only screen and (min-width: $screen-xxl) {
+    flex-direction: row;
+    gap: 0 80px;
+  }
+}
+
+/*** Layout Classes for Background Images ***/
+.l-bg-img {
+  overflow-x: hidden;
+}
+
+.l-bg-img--homepage {
+  background: url(../assets/home/background-home-mobile.jpg) 0% 0%/100% 100% no-repeat, black;
+
+  @media only screen and (min-width: $screen-md) {
+    background: url(../assets/home/background-home-tablet.jpg) 0% 0%/100% 100% no-repeat, black;
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    background: url(../assets/home/background-home-desktop.jpg) 0% 0%/100% 100% no-repeat, black;
+  }
+}
+
+.l-bg-img--dest {
+  background: url(/assets/destination/background-destination-mobile.jpg) 0% 0%/100% 100% no-repeat, black;
+
+  @media only screen and (min-width: $screen-md) {
+    background: url(/assets/destination/background-destination-tablet.jpg) 0% 0%/100% 100% no-repeat, black;
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    background: url(/assets/destination/background-destination-desktop.jpg) 0% 0%/100% 100% no-repeat, black;
+  }
+}
+
+.l-bg-img--tech {
+  background: url(/assets/technology/background-technology-mobile.jpg) 0% 0%/100% 100% no-repeat, black;
+
+  @media only screen and (min-width: $screen-md) {
+    background: url(/assets/technology/background-technology-tablet.jpg) 0% 0%/100% 100% no-repeat, black;
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    background: url(/assets/technology/background-technology-desktop.jpg) 0% 0%/100% 100% no-repeat, black;
+  }
+}
+
+/*** Layout Classes for Navigation ***/
+.l-nav {
+  &__item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 67%;
+    z-index: 1;
+  }
+  @media only screen and (min-width: $screen-md) {
+    min-width: 58%;
+  }
+}
+
+.l-nav::before {
+  @media only screen and (min-width: $screen-xxxl) {
+    content: "";
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    width: 35%;
+    position: absolute;
+    top: 88px;
+    left: 10%;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,21 @@
+@mixin center($width, $margin-top:0, $margin-l-r: auto, $margin-bottom: 0) {
+  margin: $margin-top $margin-l-r $margin-bottom;
+  width: $width;
+}
+
+@mixin text-styling($color, $ff, $fs: 1rem, $fw: 400, $ls: normal, $lh: 1, $tt: none) {
+  color: $color;
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  letter-spacing: $ls;
+  line-height: $lh;
+  text-transform: $tt;
+}
+
+@mixin flex($flex:flex, $direction:row, $align:center, $justify: space-around) {
+  display: $flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}

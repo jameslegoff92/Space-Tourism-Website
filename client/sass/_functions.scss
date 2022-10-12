@@ -1,0 +1,11 @@
+//This function calculates the rate of change needed for the middle clamp() value to ensure fluid typography
+@function textRateOfChange($firstBreakpoint, $lastBreakpoint, $minfs, $maxfs) {
+
+  $r: ((($firstBreakpoint * $maxfs) - ( $lastBreakpoint * $minfs)) / ($firstBreakpoint - $lastBreakpoint)) / 16;
+
+  $v: ((100 * ($maxfs - $minfs)) / ($lastBreakpoint - $firstBreakpoint));
+  
+  $rateOfChange: #{$v}vw + " + " + #{$r}rem;
+  
+  @return $rateOfChange;
+}

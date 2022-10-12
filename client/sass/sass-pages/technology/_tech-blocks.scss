@@ -1,0 +1,70 @@
+/*
+Table of Contents
+  1. Technology Page Background Image
+*/
+
+/*** Technology page background image ***/
+.tech-bg-img {
+  
+  &__main {
+    margin-top: 34px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__img {
+    margin-bottom: 34px;
+    width: 100%;
+  }
+
+  &__subnav {
+    margin-bottom: 26px;
+  }
+}
+
+.subnav-3 {
+  display: flex;
+  column-gap: 16px;
+  justify-content: center;
+
+  &__item {
+    background: transparent;
+    border: solid grey 1px;
+    border-radius: 50%;
+    color: var(--tertiary-color);
+    height: 40px;
+    padding: 11px 18.5px 11px 16.5px;
+    width: 40px;
+  }
+
+  &__item:hover {
+    border: solid white 1px;
+  }
+
+  &__item--active {
+    background: var(--tertiary-color);;
+    color: var(--secondary-color);
+  }
+}
+
+.tech-card {
+
+  &__title {
+    margin-bottom: 9px;
+  }
+
+  &__heading {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin: 0 auto;
+    width: calc(327 / 375 * 100%)
+  }
+}
+
+
+

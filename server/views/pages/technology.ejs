@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs') %>
+
+  <body class="l-flex l-bg-img l-bg-img--tech">
+
+    <%- include('../partials/header.ejs', {page: "tech" }) %>
+
+    <main class="l-flex">
+      <h5 class="main-heading slide-in-right"><span>0<%= index %></span>Space Launch 101</h5>
+
+      <div class="l-flex l-flex--primary@xxl" >
+        <div>
+          <picture>
+            <source media="(min-width: 1201px)" srcset="/assets/technology/image-launch-vehicle-portrait.jpg">
+            <img class="" src="<%= image %>" alt="">
+          </picture>
+        </div>
+        
+        <div class="l-flex l-flex--secondary@xxl ">
+          <nav class="c-nav c-nav--numbered c-nav--col@xxl">
+            <a class="c-nav__item <% if (name === 'Launch vehicle') { %> c-nav__item--active <% } %>"
+              href="/technology/launch%20vehicle">1</a>
+            <a class="c-nav__item<% if (name === 'Spaceport') { %> c-nav__item--active <% } %>"
+              href="/technology/spaceport">2</a>
+            <a class="c-nav__item<% if (name === 'Space capsule') { %> c-nav__item--active <% } %>"
+              href="/technology/space%20capsule">3</a>
+          </nav>
+    
+          <div class="c-card c-card--tech">
+            <p class="c-card__title"> The Terminology... </p>
+            <h3 class="c-card__heading">
+              <%= name %>
+            </h3>
+            <p class="c-card__text">
+              <%= description %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+      <script type="module" src="/app.js"></script>
+  </body>
+
+</html>
