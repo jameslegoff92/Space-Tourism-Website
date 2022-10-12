@@ -27,5 +27,4 @@
 ## Author
 
 - Frontend Mentor - https://www.frontendmentor.io/profile/jameslegoff92
-- Twitter - https://twitter.com/jameslegoff
 - Medium - https://medium.com/@jameslegoff92
